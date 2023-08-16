@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <div class="main overflow-hidden">
+    <div class="main overflow-hidden bg-black">
         <div class="hero bg-black h-[120vh] w-screen  overflow-hidden">
             <nav
                 class="invisible md:visible navbar flex bg-black text-white items-center justify-around custom_normal text-md pt-2 pb-2 border-b-[0.1rem] border-white mx-4">
                 <div class="custom_links">shubh.am()</div>
                 <div class="">
                     <ol class="flex items-center justify-center gap-16 mx-56 custom_links">
-                        <li id="nav_skills"><a class=" hover:text-lime-400">.skills()</a></li>
-                        <li id="nav_projects"><a class="hover:text-lime-400">.projects()</a></li>
-                        <li id="nav_about"><a class="hover:text-lime-400">.about()</a></li>
+                        <li id="nav_skills"><a class=" hover:text-lime-400 cursor-pointer">.skills()</a></li>
+                        <li id="nav_projects"><a class="hover:text-lime-400 cursor-pointer">.projects()</a></li>
+                        <li id="nav_about"><a class="hover:text-lime-400 cursor-pointer">.about()</a></li>
                     </ol>
                 </div>
-                <div><button class="px-4 py-1 bg-white text-sm text-black rounded-md">Get in Touch</button></div>
+                <div><button id="nav_contact" class=" px-4 py-1 bg-white text-sm text-black rounded-md">Get in Touch</button></div>
             </nav>
             <div class="hero_intro text-[25rem]" id="hero">
                 PROGRAMMER DEVELOPER EXPLORER
@@ -111,9 +111,29 @@
             </div>
         </div>
 
-        <div id="projects" class="projects bg-black h-[280vh] w-screen text-white">
+        <div class="relative flex overflow-x-hidden text-black bg-white rotate-6">
+            <div class="py-6 animate-marquee whitespace-nowrap ">
+                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+            </div>
+        
+            <div class="absolute top-0 py-6 animate-marquee2 whitespace-nowrap">
+                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold ">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+            </div>
+        </div>
+        
+
+
+        <div id="projects" class="projects bg-black h-[280vh] w-screen text-white mt-36">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify">.projects()</h1>
-            <div class="container flex flex-wrap items-center justify-center gap-10
+            <div class="proj1 container flex flex-wrap items-center justify-center gap-10
             my-8">
                 <div class="proj_desc w-[24rem] h-44  ">
                     <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Lumos - Gradient Generator</h1>
@@ -123,15 +143,15 @@
                         more than 200+ unique gradients for your project. Lumos also helps you quickly export the css to
                         your clipboard in just a click.</p>
                 </div>
-                <div class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                    <img src="assets/lumos.png" alt="" class="object-fill h-[30rem] w-[20rem] ">
+                <div id="proj1" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
+                    <a href="https://lumos-gradients.vercel.app/" target="_blank"><img src="assets/lumos.png" alt="" class="object-fill h-[30rem] w-[20rem] "> </a>
                 </div>
             </div>
-            <div class="container flex flex-wrap items-center justify-center gap-10
+            <div class="proj2 container flex flex-wrap items-center justify-center gap-10
             my-8">
                 
-                <div class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                    <img src="assets/overcast.png" alt="" class="object-fill h-[30rem] w-[20rem] ">
+                <div id="proj2" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
+                    <a href="https://liquid-404.github.io/OverCast-Weather-App/" target="_blank"><img src="assets/overcast.png" alt="" class="object-fill h-[30rem] w-[20rem] "> </a>
                 </div>
                 <div class="proj_desc w-[24rem] h-44  ">
                     <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Overcast - Weather App</h1>
@@ -140,15 +160,15 @@
                     <p class="custom_normal px-2 text-sm">"OverCast" is an innovative weather app that provides real-time weather information for any location around the world. With OverCast, you can search for weather information by location and receive up-to-date data on temperature, humidity, wind speed, and more.</p>
                 </div>
             </div>
-            <div class="container flex flex-wrap items-center justify-center gap-10
+            <div class="proj3 container flex flex-wrap items-center justify-center gap-10
             my-8">
             <div class="proj_desc w-[24rem] h-44  ">
                 <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Hydrate - Water Reminder</h1>
                 <h5 class="custom_normal text-slate-400 font-light px-2">Tech Stack: Python</h5>
                 <p class="custom_normal px-2 text-sm">Hydrate is a simple Python Program that will help you reach your daily water consumption goal. The application sends notifications after a fixed interval to encourage the user to take a break and drink up, also generates a random water fact along with the reminder notification.</p>
             </div>
-            <div class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80" alt="" class="object-fill h-[30rem] w-[20rem] ">
+            <div id="proj3" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
+                <a href="https://github.com/LiQuiD-404/Python-Projects/tree/main/Hydrate%20-%20Water%20Reminder" target="_blank"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80" alt="" class="object-fill h-[30rem] w-[20rem] "></a>
             </div>
             </div>
 
@@ -178,6 +198,89 @@
                 </div>
             </div>
         </div>
+
+        <div id="contact" class="contact bg-black h-[140vh] w-screen text-white">
+            <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify mb-10">contact.me()</h1>
+            <div class="container flex items-center justify-center flex-wrap gap-10 ">
+                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="mailto:shubhamsingh.exe@gmail.com"><img src="assets/mail.png" alt="" class="h-32"></a>
+                </div>
+                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://www.linkedin.com/in/shubbh/"><img src="assets/linkedin.png" alt="" class="h-32"></a>
+                </div>
+                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://twitter.com/shubbh_"><img src="assets/twitter.png" alt="" class="h-32"></a>
+                </div>
+                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://github.com/LiQuiD-404"><img src="assets/github_cont.png" alt="" class="h-32"></a>
+                </div>
+                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://www.instagram.com/_shubhistic_/"><img src="assets/insta.png" alt="" class="h-32"></a>
+                </div>
+            </div>
+            <div class="container my-16 flex items-center justify-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58911.84163607082!2d88.38904514435404!3d22.654157645737744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e6c605d82ff%3A0x1f6779d05c4879ee!2sDum%20Dum%2C%20Kolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1692208784488!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+
+        <div class="relative flex overflow-x-hidden text-black bg-white -rotate-6">
+            <div class="py-6 animate-marquee whitespace-nowrap ">
+                <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
+            </div>
+        
+            <div class="absolute top-0 py-6 animate-marquee2 whitespace-nowrap">
+                <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold ">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
+                <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
+            </div>
+        </div>
+
+        <div class="bonus bg-black h-[250vh] w-screen text-white mt-40">
+            <div class="container flex items-center justify-center gap-32">
+                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-right">GitHub Issues Worked on : </div>
+                <div class="right w-1/3 h-56">
+                    <div class="issues text-lime-400 text-[17rem] custom_bold" id="issues">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container flex items-center justify-center mt-80">
+                <div class="right w-1/3 h-56">
+                    <div class="contri text-lime-400 text-[17rem] custom_bold" id="contri">
+                    </div>
+                </div>
+                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-left">Contributions made</div>
+            </div>
+
+            <div class="container flex items-center justify-center mt-80">
+                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-left">Lines of code written:</div>
+                <div class="right w-1/3 h-56">
+                    <div class="lines text-lime-400 text-[17rem] custom_bold" id="lines">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="resume bg-black h-[120vh] w-screen text-white">
+            <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify mb-10">.resume()</h1>
+            <div class="custom_normal mx-14 text-[2rem] relative ">Want to learn more about <span id="me" class="absolute ml-2">me?</span></div>
+            <a href="assets/Resume.pdf" download><button type="button" class="mx-14 mt-7 text-black font-medium bg-lime-400 hover:bg-lime-600 ffont-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center custom_normal">
+                Download Resume
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </button></a>
+        </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
