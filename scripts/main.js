@@ -64,6 +64,13 @@ document.getElementById("nav_contact").addEventListener("click", function (e) {
     });
 });
 
+document.getElementById("nav_work").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("work").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
 gsap.from("#proj1", {
     transform: "translateY(-100px)",
     duration: 2,
@@ -241,6 +248,19 @@ gsap.from(".social_banner .social",{
     stagger: 0.3,
     scrollTrigger:{
         trigger: ".social_banner",
+        scroller: "body"
+    }
+})
+
+
+gsap.from(".main .work_exp",{
+    transform: "translateX(400px)",
+    opacity: 0,
+    scale: 0,
+    duration:1,
+    stagger: 0.3,
+    scrollTrigger:{
+        trigger: ".work_exp",
         scroller: "body"
     }
 })
