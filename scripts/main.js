@@ -1,7 +1,6 @@
 gsap.to("#hero", {
     transform: "translate(-3100px, 0px)",
     color: "#a3e635",
-    fontWeight: 400,
     duration: 10,
     scrollTrigger: {
         trigger: ".hero",
@@ -104,7 +103,7 @@ function issues() {
         num = num + temp;
         elem.innerHTML = num;
     }
-    else{
+    else {
         elem.innerHTML = "189";
         clearInterval(interval)
     }
@@ -133,7 +132,7 @@ function contri() {
         num1 = num1 + temp;
         elem1.innerHTML = num1;
     }
-    else{
+    else {
         elem1.innerHTML = "80+";
         clearInterval(interval1)
     }
@@ -162,7 +161,7 @@ function lines() {
         num2 = num2 + temp;
         elem2.innerHTML = num2;
     }
-    else{
+    else {
         elem2.innerHTML = "8000+";
         clearInterval(interval2)
     }
@@ -186,20 +185,62 @@ gsap.to("#me", {
         trigger: ".resume",
         scroller: "body",
         onEnter: font_updater_start
-    
+
     }
 })
 let inter = "";
-function font_updater_start(){
-    inter = setInterval(font_updater,100)
+function font_updater_start() {
+    inter = setInterval(font_updater, 200)
 }
 
-function font_updater(){
-    let arr = ["Roboto","monospace","serif","Arial","BlinkMacSystemFont","Consolas","Times New Roman","Segoe UI Symbol","Georgia"];
-    let rand = Math.floor(Math.random()* 10);
-  
-        document.getElementById("me").style.fontFamily = arr[rand]
-        console.log(arr[rand])
-    
+function font_updater() {
+    let arr = [
+        "Roboto",
+        "monospace",
+        "serif",
+        "Arial",
+        "BlinkMacSystemFont",
+        "Consolas",
+        "Times New Roman",
+        "Segoe UI Symbol",
+        "Georgia"];
+    const colors = [
+        '#6AD4C0',
+        '#34DF62',
+        '#DEE361',
+        '#924827',
+        '#D925C3',
+        '#ADBFE9',
+        '#800080',
+        '#C2F90C',
+        '#E26C07',
+        '#800000'
+    ];
+    let rand = Math.floor(Math.random() * 10);
+    let col = Math.floor(Math.random() * 10);
+
+    document.getElementById("me").style.fontFamily = arr[rand]
+    document.getElementById("me").style.color = colors[col]
+
 }
 
+
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+
+gsap.from(".social_banner .social",{
+    opacity:0,
+    scale: 0,
+    delay: 0.5,
+    stagger: 0.3,
+    scrollTrigger:{
+        trigger: ".social_banner",
+        scroller: "body"
+    }
+})

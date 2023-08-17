@@ -5,135 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Shubham Singh</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/output.css">
 </head>
 
 <body>
     <div class="main overflow-hidden bg-black">
-        <div class="hero bg-black h-[120vh] w-screen  overflow-hidden">
+        <div class="hero bg-black h-[120vh] w-screen overflow-hidden">
             <nav
-                class="invisible md:visible navbar flex bg-black text-white items-center justify-around custom_normal text-md pt-2 pb-2 border-b-[0.1rem] border-white mx-4">
-                <div class="custom_links">shubh.am()</div>
-                <div class="">
-                    <ol class="flex items-center justify-center gap-16 mx-56 custom_links">
-                        <li id="nav_skills"><a class=" hover:text-lime-400 cursor-pointer">.skills()</a></li>
-                        <li id="nav_projects"><a class="hover:text-lime-400 cursor-pointer">.projects()</a></li>
-                        <li id="nav_about"><a class="hover:text-lime-400 cursor-pointer">.about()</a></li>
-                    </ol>
+                class="custom_links flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white bg-black pb-2 border-b-[0.1rem] border-white ">
+                <div>
+                    shubh.am()
                 </div>
-                <div><button id="nav_contact" class=" px-4 py-1 bg-white text-sm text-black rounded-md">Get in Touch</button></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                    <ul class="pt-4 text-base text-white md:flex  md:justify-between md:pt-0">
+                        <li id="nav_skills">
+                            <a class="md:p-4 py-2 block hover:text-lime-400">.skills()</a>
+                        </li>
+                        <li id="nav_projects">
+                            <a class="md:p-4 py-2 block hover:text-lime-400">.projects()</a>
+                        </li>
+                        <li id="nav_about">
+                            <a class="md:p-4 py-2 block hover:text-lime-400">.about()</a>
+                        </li>
+
+
+                        <a class="md:p-4 py-2 block hover:text-lime-400">
+                            <button id="nav_contact"
+                                class=" px-4 py-1 bg-white text-sm text-black rounded-md font-medium hover:bg-lime-400">Get in
+                                Touch</button>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <div class="hero_intro text-[25rem]" id="hero">
+            <div class="hero_intro text-[25rem] mb-40" id="hero">
                 PROGRAMMER DEVELOPER EXPLORER
             </div>
         </div>
-        <div id="skills" class="skills bg-black h-[120vh] w-screen text-white">
+        <div id="skills" class="skills bg-black h-fit w-screen text-white">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify">.skills()</h1>
-            <div class="container mx-14 py-6 flex flex-wrap gap-10">
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/c.png" alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">C</h1>
-                    <p class="custom_normal text-xs px-1">Used C for Competitive Programming on platforms like LeetCode
-                        and CodeChef.</p>
+            <div class="mx-10 py-6 flex flex-wrap items-center justify-center gap-10">
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/c.png" alt="">
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">C</h1>
+                    <p class="custom_normal text-xs px-3">Used C for Competitive Programming on platforms like
+                        LeetCode..</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/cpp.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/cpp.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">C++</h1>
-                    <p class="custom_normal text-xs px-1">Used C++ for Competitive Programming on platforms like
-                        LeetCode and CodeChef.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">C++</h1>
+                    <p class="custom_normal text-xs px-3">Used C++ for Competitive Programming on platforms like
+                        LeetCode.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/java.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/java.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Java</h1>
-                    <p class="custom_normal text-xs px-1">Used Java for Competitive Programming on platforms like
-                        LeetCode and CodeChef.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Java</h1>
+                    <p class="custom_normal text-xs px-3">Used Java for Competitive Programming on platforms like
+                        LeetCode.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/python.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/python.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Python</h1>
-                    <p class="custom_normal text-xs px-1">Used Python for automation and machine learning projects.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Python</h1>
+                    <p class="custom_normal text-xs px-3">Used Python for automation and machine learning projects.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/html.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/html.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">HTML</h1>
-                    <p class="custom_normal text-xs px-1">Used HTML for webpage development.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">HTML</h1>
+                    <p class="custom_normal text-xs px-3">Used HTML for webpage development.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/css.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/css.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">CSS</h1>
-                    <p class="custom_normal text-xs px-1">Used CSS for webpage designing.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">CSS</h1>
+                    <p class="custom_normal text-xs px-3">Used CSS for webpage designing.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1"
                         src="assets/tailwindcss.png" alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">TailWindCSS</h1>
-                    <p class="custom_normal text-xs px-1">Used TailWindCSS for webpage designing.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">TailWindCSS</h1>
+                    <p class="custom_normal text-xs px-3">Used TailWindCSS for webpage designing.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/bootstrap.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/bootstrap.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">BootStrap</h1>
-                    <p class="custom_normal text-xs px-1">Used BootStrap for webpage designing.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">BootStrap</h1>
+                    <p class="custom_normal text-xs px-3">Used BootStrap for webpage designing.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/js.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/js.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">JavaScript</h1>
-                    <p class="custom_normal text-xs px-1">Used JavaScript for webpage scripting.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">JavaScript</h1>
+                    <p class="custom_normal text-xs px-3">Used JavaScript for webpage scripting.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/react.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/react.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">React js</h1>
-                    <p class="custom_normal text-xs px-1">Used React js for single page website building.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">React js</h1>
+                    <p class="custom_normal text-xs px-3">Used React js for single page website building.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/git.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/git.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Git</h1>
-                    <p class="custom_normal text-xs px-1">Used Git for version control.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Git</h1>
+                    <p class="custom_normal text-xs px-3">Used Git for version control.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/github.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/github.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Github</h1>
-                    <p class="custom_normal text-xs px-1">Used Github for open-source contribution and project hosting.
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Github</h1>
+                    <p class="custom_normal text-xs px-3">Used Github for open-source contribution and project hosting.
                     </p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/premiere.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/premiere.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Premiere Pro</h1>
-                    <p class="custom_normal text-xs px-1">Used Premiere Pro for Video Editing.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Premiere Pro</h1>
+                    <p class="custom_normal text-xs px-3">Used Premiere Pro for Video Editing.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/ps.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/ps.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Photoshop</h1>
-                    <p class="custom_normal text-xs px-1">Used Photoshop for asset creation, photo editing and more.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Photoshop</h1>
+                    <p class="custom_normal text-xs px-3">Used Photoshop for asset creation, photo editing and more.</p>
                 </div>
-                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-1 py-1" src="assets/figma.png"
+                <div class="skillset h-40 w-40 bg-zinc-950 rounded-md"><img class="px-3 py-1" src="assets/figma.png"
                         alt="">
-                    <h1 class="custom_normal font-medium pt-2 px-1 text-lime-400">Figma</h1>
-                    <p class="custom_normal text-xs px-1">Used Figma for webpage wire framing and designing.</p>
+                    <h1 class="custom_normal font-medium pt-2 px-3 text-lime-400">Figma</h1>
+                    <p class="custom_normal text-xs px-3">Used Figma for webpage wire framing and designing.</p>
                 </div>
             </div>
+
+            <div class="relative flex overflow-x-hidden text-black bg-white rotate-6 mt-16">
+                <div class="py-6 animate-marquee whitespace-nowrap ">
+                    <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                </div>
+
+                <div class="absolute top-0 py-6 animate-marquee2 whitespace-nowrap">
+                    <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold ">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
+                    <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
+                </div>
+            </div>
+
         </div>
 
-        <div class="relative flex overflow-x-hidden text-black bg-white rotate-6">
-            <div class="py-6 animate-marquee whitespace-nowrap ">
-                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
-            </div>
-        
-            <div class="absolute top-0 py-6 animate-marquee2 whitespace-nowrap">
-                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold ">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold">BUILDING CREATIVE SOLUTIONS</span>
-                <span class="text-5xl mx-2 custom_bold text-lime-400">BUILDING CREATIVE SOLUTIONS</span>
-            </div>
-        </div>
-        
 
 
-        <div id="projects" class="projects bg-black h-[280vh] w-screen text-white mt-36">
+        <div id="projects" class="projects bg-black h-fit w-screen text-white mt-36">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify">.projects()</h1>
-            <div class="proj1 container flex flex-wrap items-center justify-center gap-10
+            <div class="proj1   flex flex-wrap items-center justify-center gap-10
             my-8">
                 <div class="proj_desc w-[24rem] h-44  ">
                     <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Lumos - Gradient Generator</h1>
@@ -144,88 +167,106 @@
                         your clipboard in just a click.</p>
                 </div>
                 <div id="proj1" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                    <a href="https://lumos-gradients.vercel.app/" target="_blank"><img src="assets/lumos.png" alt="" class="object-fill h-[30rem] w-[20rem] "> </a>
+                    <a href="https://lumos-gradients.vercel.app/" target="_blank"><img src="assets/lumos.png" alt=""
+                            class="object-fill h-[30rem] w-[20rem] hover:opacity-75"> </a>
                 </div>
             </div>
-            <div class="proj2 container flex flex-wrap items-center justify-center gap-10
+            <div class="proj2   flex flex-wrap items-center justify-center gap-10
             my-8">
-                
+
                 <div id="proj2" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                    <a href="https://liquid-404.github.io/OverCast-Weather-App/" target="_blank"><img src="assets/overcast.png" alt="" class="object-fill h-[30rem] w-[20rem] "> </a>
+                    <a href="https://liquid-404.github.io/OverCast-Weather-App/" target="_blank"><img
+                            src="assets/overcast.png" alt="" class="object-fill h-[30rem] w-[20rem] hover:opacity-75">
+                    </a>
                 </div>
                 <div class="proj_desc w-[24rem] h-44  ">
                     <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Overcast - Weather App</h1>
                     <h5 class="custom_normal text-slate-400 font-light px-2">Tech Stack: HTML, CSS, BootStrap &
                         JavaScript</h5>
-                    <p class="custom_normal px-2 text-sm">"OverCast" is an innovative weather app that provides real-time weather information for any location around the world. With OverCast, you can search for weather information by location and receive up-to-date data on temperature, humidity, wind speed, and more.</p>
+                    <p class="custom_normal px-2 text-sm">"OverCast" is an innovative weather app that provides
+                        real-time weather information for any location around the world. With OverCast, you can search
+                        for weather information by location and receive up-to-date data on temperature, humidity, wind
+                        speed, and more.</p>
                 </div>
             </div>
-            <div class="proj3 container flex flex-wrap items-center justify-center gap-10
+            <div class="proj3   flex flex-wrap items-center justify-center gap-10
             my-8">
-            <div class="proj_desc w-[24rem] h-44  ">
-                <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Hydrate - Water Reminder</h1>
-                <h5 class="custom_normal text-slate-400 font-light px-2">Tech Stack: Python</h5>
-                <p class="custom_normal px-2 text-sm">Hydrate is a simple Python Program that will help you reach your daily water consumption goal. The application sends notifications after a fixed interval to encourage the user to take a break and drink up, also generates a random water fact along with the reminder notification.</p>
-            </div>
-            <div id="proj3" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
-                <a href="https://github.com/LiQuiD-404/Python-Projects/tree/main/Hydrate%20-%20Water%20Reminder" target="_blank"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80" alt="" class="object-fill h-[30rem] w-[20rem] "></a>
-            </div>
+                <div class="proj_desc w-[24rem] h-44  ">
+                    <h1 class="custom_normal text-lime-400 font-medium px-2 pt-2">Hydrate - Water Reminder</h1>
+                    <h5 class="custom_normal text-slate-400 font-light px-2">Tech Stack: Python</h5>
+                    <p class="custom_normal px-2 text-sm">Hydrate is a simple Python Program that will help you reach
+                        your daily water consumption goal. The application sends notifications after a fixed interval to
+                        encourage the user to take a break and drink up, also generates a random water fact along with
+                        the reminder notification.</p>
+                </div>
+                <div id="proj3" class="proj_img  w-[20rem] h-[30rem] bg-slate-200">
+                    <a href="https://github.com/LiQuiD-404/Python-Projects/tree/main/Hydrate%20-%20Water%20Reminder"
+                        target="_blank"><img
+                            src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80"
+                            alt="" class="object-fill h-[30rem] w-[20rem] hover:opacity-75"></a>
+                </div>
             </div>
 
         </div>
 
-        <div id="about" class="About bg-black h-[120vh] w-screen text-white">
+        <div id="about" class="About bg-black h-fit w-screen text-white mt-40">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify">about.me()</h1>
-            <div class="container flex">
-                <p class="custom_normal mx-14 py-2 w-2/4 ">
-                    My name is <span class="text-lime-400">Shubham</span>. A Pre-final year CSE student at Vellore
-                    Institute of Technology, proficient in
-                    C,C++,
-                    Java, and Python and passionate about creating user-friendly web apps and skilled in HTML, CSS, and
-                    JavaScript.
-                    <br> <br>
-                    I've participated in several open-source hackathons and currently serve as a GeeksforGeeks campus
-                    ambassador, mentoring fellow students in their technical journey.
-                    <br> <br>
-                    I'm constantly seeking to expand my knowledge and stay updated with the latest industry
-                    developments. I
-                    enjoy collaborating with peers and mentors to solve challenging problems and deliver high-quality
-                    work.
-                </p>
+            <div class="  flex flex-wrap items-center justify-center gap-10
+            my-8">
 
-                <div class="pf w-1/2">
-                    <img id="pf" src="assets/pf.jpg" alt="" srcset="" class="bg-no-repeat h-[23rem] px-36">
+                <div class="proj_img  w-[20rem] h-[25rem]">
+                    <div class="pf">
+                        <img id="pf" src="assets/pf.jpg" alt="" class="object-fill h-[25rem] w-[20rem]"> </a>
+                    </div>
+                </div>
+                <div class="proj_desc w-[40rem] h-fit">
+                    <p class="custom_normal px-2 text-justify text-sm">I am Shubham, a dedicated pre-final year Computer Science Engineering student at Vellore Institute of Technology. Proficient in a range of programming languages including C, C++, Java, and Python, I possess a strong passion for crafting user-friendly web applications. My skill set extends to HTML, CSS, and JavaScript, allowing me to seamlessly blend creativity and functionality into my projects.
+                        <br><br>
+                        My journey in the tech realm has been marked by active participation in diverse open-source hackathons, demonstrating my commitment to innovation and collaborative problem-solving. 
+                        <br><br>
+                        As an avid learner, I am committed to keeping pace with the ever-evolving landscape of technology. I find immense joy in working alongside peers and mentors, jointly conquering intricate challenges and delivering solutions of the highest caliber. My journey encapsulates an unwavering pursuit of knowledge, a knack for teamwork, and an unbridled enthusiasm for creating meaningful contributions in the world of technology.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div id="contact" class="contact bg-black h-[140vh] w-screen text-white">
+        <div id="contact" class="contact bg-black h-fit w-screen text-white mt-48">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify mb-10">contact.me()</h1>
-            <div class="container flex items-center justify-center flex-wrap gap-10 ">
-                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+            <div class="social_banner  flex items-center justify-center flex-wrap gap-10 ">
+                <div
+                    class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
                     <a href="mailto:shubhamsingh.exe@gmail.com"><img src="assets/mail.png" alt="" class="h-32"></a>
                 </div>
-                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
-                    <a href="https://www.linkedin.com/in/shubbh/"><img src="assets/linkedin.png" alt="" class="h-32"></a>
+                <div
+                    class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://www.linkedin.com/in/shubbh/"><img src="assets/linkedin.png" alt=""
+                            class="h-32"></a>
                 </div>
-                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                <div
+                    class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
                     <a href="https://twitter.com/shubbh_"><img src="assets/twitter.png" alt="" class="h-32"></a>
                 </div>
-                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                <div
+                    class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
                     <a href="https://github.com/LiQuiD-404"><img src="assets/github_cont.png" alt="" class="h-32"></a>
                 </div>
-                <div class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
-                    <a href="https://www.instagram.com/_shubhistic_/"><img src="assets/insta.png" alt="" class="h-32"></a>
+                <div
+                    class="social h-40 w-40 rounded-full bg-zinc-950 hover:bg-zinc-900 flex items-center justify-center">
+                    <a href="https://www.instagram.com/_shubhistic_/"><img src="assets/insta.png" alt=""
+                            class="h-32"></a>
                 </div>
             </div>
-            <div class="container my-16 flex items-center justify-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58911.84163607082!2d88.38904514435404!3d22.654157645737744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e6c605d82ff%3A0x1f6779d05c4879ee!2sDum%20Dum%2C%20Kolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1692208784488!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="  my-16 flex items-center justify-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58911.84163607082!2d88.38904514435404!3d22.654157645737744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e6c605d82ff%3A0x1f6779d05c4879ee!2sDum%20Dum%2C%20Kolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1692208784488!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
 
         </div>
 
-        <div class="relative flex overflow-x-hidden text-black bg-white -rotate-6">
+        <div class="relative flex overflow-x-hidden text-black bg-white -rotate-6 mt-36">
             <div class="py-6 animate-marquee whitespace-nowrap ">
                 <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
                 <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
@@ -233,7 +274,7 @@
                 <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
                 <span class="text-5xl mx-2 custom_bold">SOME HONOURABLE ACHIEVEMENTS</span>
             </div>
-        
+
             <div class="absolute top-0 py-6 animate-marquee2 whitespace-nowrap">
                 <span class="text-5xl mx-2 custom_bold text-lime-400">SOME HONOURABLE ACHIEVEMENTS</span>
                 <span class="text-5xl mx-2 custom_bold ">SOME HONOURABLE ACHIEVEMENTS</span>
@@ -243,42 +284,48 @@
             </div>
         </div>
 
-        <div class="bonus bg-black h-[250vh] w-screen text-white mt-40">
-            <div class="container flex items-center justify-center gap-32">
-                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-right">GitHub Issues Worked on : </div>
-                <div class="right w-1/3 h-56">
-                    <div class="issues text-lime-400 text-[17rem] custom_bold" id="issues">
+        <div class="bonus bg-black h-fit w-screen text-white mt-40">
+            <div class="  flex flex-wrap items-center justify-center gap-10">
+                <div class="left w-[20rem] h-fit custom_normal font-medium text-[2rem] mx-3 sm:text-[3rem] sm:text-right">GitHub Issues Worked on :
+                </div>
+                <div class="right w-fit h-fit">
+                    <div class="issues flex flex-wrap items-center justify-center text-lime-400 text-[12rem] sm:text-[17rem] custom_bold" id="issues">
                     </div>
                 </div>
             </div>
 
-            <div class="container flex items-center justify-center mt-80">
-                <div class="right w-1/3 h-56">
-                    <div class="contri text-lime-400 text-[17rem] custom_bold" id="contri">
+            <div class="  flex flex-wrap items-center justify-center mt-48">
+                <div class="right w-fit h-56">
+                    <div class="contri text-lime-400 text-[12rem] sm:text-[17rem] custom_bold" id="contri">
                     </div>
                 </div>
-                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-left">Contributions made</div>
+                <div class=" flex items-center justify-center left w-[30rem]  h-40 custom_normal font-medium text-[2rem] sm:text-[3rem] sm:text-left pt-14">Contributions made</div>
             </div>
 
-            <div class="container flex items-center justify-center mt-80">
-                <div class="left w-1/3 h-40 custom_normal font-medium text-[3rem] text-left">Lines of code written:</div>
-                <div class="right w-1/3 h-56">
-                    <div class="lines text-lime-400 text-[17rem] custom_bold" id="lines">
+            <div class="  flex flex-wrap items-center justify-center mt-60 sm:mt-80">
+                <div class="left w-[20rem]  h-fit custom_normal font-medium text-[1.8rem] sm:text-[3rem] sm:text-left ml-2">Lines of code written:
+                </div>
+                <div class="right w-[40rem]  h-fit">
+                    <div class="lines text-lime-400 text-[10rem] sm:text-[17rem] custom_bold flex items-center justify-center" id="lines">
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
-        <div class="resume bg-black h-[120vh] w-screen text-white">
+        <div class="resume bg-black h-[120vh] w-screen text-white mt-40">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify mb-10">.resume()</h1>
-            <div class="custom_normal mx-14 text-[2rem] relative ">Want to learn more about <span id="me" class="absolute ml-2">me?</span></div>
-            <a href="assets/Resume.pdf" download><button type="button" class="mx-14 mt-7 text-black font-medium bg-lime-400 hover:bg-lime-600 ffont-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center custom_normal">
-                Download Resume
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-            </button></a>
+            <div class="custom_normal mx-14 text-[2rem] relative ">Want to know more about <span id="me"
+                    class="absolute ml-2">me?</span></div>
+            <a href="assets/Resume.pdf" download><button type="button"
+                    class="mx-14 mt-7 text-black font-medium bg-lime-400 hover:bg-lime-600 ffont-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center custom_normal">
+                    Download Resume
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </button></a>
         </div>
 
     </div>
