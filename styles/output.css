@@ -937,12 +937,12 @@ video {
   font-size: 12rem;
 }
 
-.text-\[25rem\] {
-  font-size: 25rem;
-}
-
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-\[5rem\] {
+  font-size: 5rem;
 }
 
 .text-base {
@@ -963,6 +963,22 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[15rem\] {
+  font-size: 15rem;
+}
+
+.text-\[20rem\] {
+  font-size: 20rem;
+}
+
+.text-\[18rem\] {
+  font-size: 18rem;
+}
+
+.text-\[19rem\] {
+  font-size: 19rem;
 }
 
 .font-light {
@@ -1060,6 +1076,18 @@ video {
   .sm\:text-\[3rem\] {
     font-size: 3rem;
   }
+
+  .sm\:text-\[25rem\] {
+    font-size: 25rem;
+  }
+
+  .sm\:text-\[20rem\] {
+    font-size: 20rem;
+  }
+
+  .sm\:text-\[21rem\] {
+    font-size: 21rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1094,5 +1122,35 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-\[25rem\] {
+    font-size: 25rem;
+  }
+
+  .md\:text-\[21rem\] {
+    font-size: 21rem;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-\[23rem\] {
+    font-size: 23rem;
+  }
+
+  .md\:text-\[24rem\] {
+    font-size: 24rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-\[23rem\] {
+    font-size: 23rem;
+  }
+
+  .lg\:text-\[25rem\] {
+    font-size: 25rem;
   }
 }
