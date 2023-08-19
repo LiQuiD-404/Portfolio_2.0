@@ -264,3 +264,11 @@ gsap.from(".main .work_exp",{
         scroller: "body"
     }
 })
+
+const lenis = new Lenis()
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
