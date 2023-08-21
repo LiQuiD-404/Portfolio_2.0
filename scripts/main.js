@@ -272,3 +272,38 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+var t1 = gsap.timeline();
+
+
+t1.to(".base",{
+    delay: 1,
+    height : "0vh",
+    duration: 1.5,
+    ease: Expo.easeInOut
+})
+t1.to(".layer1",{
+    height : "100vh",
+    duration: 1.5,
+    delay: -1.5,
+    ease: Expo.easeInOut
+})
+t1.to(".layer2",{
+    height : "100vh",
+    duration: 1.5,
+    delay: -1.2,
+    ease: Expo.easeInOut
+})
+t1.to(".loader",{
+    opacity : 0,
+    duration: 1.5,
+    delay: -0.5,
+    ease: Expo.easeInOut
+})
+t1.to("#hero_start",{
+    duration: 2,
+    visibility:"visible",
+    opacity: 100,
+    delay: -1.2,
+    ease: Expo.easeIn
+})
