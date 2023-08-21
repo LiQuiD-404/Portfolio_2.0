@@ -11,7 +11,12 @@
 
 <body>
     <div class="main overflow-hidden bg-black">
-        <div class="hero bg-black h-[120vh] w-screen overflow-hidden">
+        <div class="loader">
+            <div class="base"></div>
+            <div class="layer1"></div>
+            <div class="layer2"></div>
+        </div>
+        <div id="hero_start" class="hero bg-black h-[120vh] w-screen overflow-hidden invisible opacity-0">
             <nav
                 class="custom_links flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white bg-black pb-2 border-b-[0.1rem] border-white ">
                 <div>
@@ -386,7 +391,7 @@
 
         </div>
 
-        <div class="resume bg-black h-[120vh] w-screen text-white mt-40">
+        <div class="resume bg-black h-[80vh] w-screen text-white mt-40">
             <h1 class="custom_links text-[2rem] mx-14 font-thin text-justify mb-10">.resume()</h1>
             <div class="custom_normal mx-14 text-[2rem] relative ">Want to know more about <span id="me"
                     class="absolute ml-2">me?</span></div>
